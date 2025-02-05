@@ -59,6 +59,11 @@
                 <attribute name="denormalization_context">
                     <attribute name="groups">admin:product:create</attribute>
                 </attribute>
+
+                <attribute name="messenger">true</attribute>
+                <attribute name="output">false</attribute>
+                <attribute name="status">202</attribute>
+
             </collectionOperation>
         </collectionOperations>
 
@@ -114,6 +119,11 @@
                 <attribute name="denormalization_context">
                     <attribute name="groups">admin:product:update</attribute>
                 </attribute>
+
+                <attribute name="messenger">true</attribute>
+                <attribute name="output">false</attribute>
+                <attribute name="status">202</attribute>
+
             </itemOperation>
 
             <itemOperation name="admin_delete">

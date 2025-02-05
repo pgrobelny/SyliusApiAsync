@@ -1,0 +1,10 @@
+framework:
+    messenger:
+        transports:
+            async: '%env(MESSENGER_TRANSPORT_DSN)%'
+        routing:
+            'Sylius\Resource\Model\ResourceInterface': async
+        buses:
+            sylius.command_bus:
+                middleware:
+                    - App\Message\Middleware\PersistMiddleware
